@@ -9,122 +9,181 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
-    <title>Relojes smartwatch y accesorios - Style Store</title>
+    <title>Smartwatches y accesorios - Smart Store</title>
 </head>
+
+
 <body>
+    <!-- Comienzo HEADER -->
     <header>
-        <!-- Problemas con el fixed top, la parte del texto del banner se pierde -->
-        <nav class="navbar navbar-expand-lg  navbar-light bg-light d-flex justify-content-between">
+        <!-- Problemas con "fixed-top", el título del banner se pierde cuando se achica la pantalla -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between"> 
+
             <div class="container-fluid">
-                <a href="./index.html" class="navbar-brand mx-3"><img src="./assets/logo-smart.png" alt="Bootstrap" width="30" height="30" class="me-2">Smart</a>
+                <a href="./index.html" class="navbar-brand mx-3"><img src="./assets/logo-smart.png" alt="Logo" width="30" height="30" class="me-2">Smart</a>
                 <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><span></button>
             </div>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="list-unstyled navbar-nav">
-                    <li class="px-2"><a href="" class="nav-link active">Inicio</a></li>
-                    <li class="px-2"><a href="" class="nav-link">Tienda</a></li>
-                    <li class="px-2"><a href="" class="nav-link">Nosotros</a></li>
-                    <li class="px-2"><a href="" class="nav-link">Novedades</a></li>
-                    <li class="px-2"><a href="" class="nav-link text-success">Comprar</a></li>
+                    <li class="px-2"><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li class="px-2"><a href="#tendencias" class="nav-link">Novedades</a></li>
+                    <li class="px-2"><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li class="px-2"><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li class="px-2"><a href="#inicio" class="nav-link text-success">Tienda</a></li>
+
                 </ul>
             </div>
         </nav>
     </header>
+    <!-- Fin HEADER -->
 
+    <!-- Comienzo MAIN-->
     <main>
         <!-- Banner -->
-        <!-- Problemas con la imagen del reloj -->
-        <section>
+        <section id="inicio">
             <div class="banner d-flex">
-                <div class="container-fluid d-flex justify-content-center align-items-center flex-wrap" style="width: 80%;">
+                <div class="container-fluid d-flex justify-content-center align-items-center flex-wrap p-0" style="width: 80%;">
+
                     <div class="col-sm-12 col-md-7 col-lg-6 pt-3">
                         <h1 class="display-1">Smartwatch</h1>
-                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam excepturi alias, distinctio ratione eligendi natus quis ducimus sapiente, officia maxime nihil, enim quas nobis nulla inventore harum eveniet dolore. Quae.</p>
+                        <p class="lead">Recibí llamadas desde el smart, elegí que canción escuchar, controlá tu actividad diaria y medí tu salud.</p>
                         <div>
-                            <button class="btn btn-outline-light rounded-pill mb-2 me-2">Explorar ahora</button>
-                            <button class="btn btn-success rounded-pill mb-2">Comprar</button>
+                            <button class="btn btn-outline-light btn-lg rounded-pill mb-2 me-2">Explorar ahora</button>
+                            <button class="btn btn-success btn-lg rounded-pill mb-2">Comprar</button>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-5 col-lg-6 d-flex justify-content-center"><img src="./assets/hero-mockup.png" alt="hero-mockup" class="bounce hero-mockup" width="80%" height="auto"></div>  
+
+                    <div class="col-sm-12 col-md-5 col-lg-6 d-flex justify-content-center">
+                        <img src="./assets/hero-mockup.png" alt="mockup" class="bounce hero-mockup">
+                    </div>  
                 </div>
             </div>
-
         </section>
 
         <!-- Cards -->
-        <section class="container-fluid">
+        <section class="container-fluid" id="tendencias">
+
             <div class="text-center mt-4">
                 <h2>Tendencias</h2>
                 <h3>Novedades</h3>
             </div>
+
             <div class="row mx-auto text-left">
-                <div class="col-sm-12 col-md-6 col-lg-3 mx-auto my-2 px-0 border" style="width: 300px;">
-                    <img src="./assets/smartwatch1.jpg" alt="" width="100%" height="300px">
+
+                <!-- CARD 1 -->
+                <div class="col-sm-12 col-md-6 col-lg-3 mx-auto my-2 px-0 border card">
+                    <img src="./assets/smartwatch1.jpg" alt="Smartwatch galaxy watch 4" width="100%" height="300px">
                     <div class="px-3 py-2">
-                        <span class="border rounded-pill px-2 bg-info text-white">Más detalles</span>
-                        <span class="rounded-pill px-2 bg-warning text-white">Ver precio</span>
+                        <span class="badge bg-success">Más detalles</span>
+                        <span class="badge bg-primary">Ver precio</span>
                         <h4 class="pt-2">Samsung Galaxy Watch 4</h4>
-                        <p>Contenido de card</p>
-                        <p  class="small text-secondary mb-2">Última actualización 1</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis quae sunt accusamus asperiores illum aut, debitis rem in iusto consequatur qui architecto reiciendis voluptatibus nesciunt.</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 mx-auto my-2  px-0 border" style="width: 300px;">
-                    <img src="./assets/smartwatch2.jpg" alt="" width="100%" height="300px">
+
+                <!-- CARD 2 -->
+                <div class="col-sm-12 col-md-6 col-lg-3 mx-auto my-2  px-0 border card">
+                    <img src="./assets/smartwatch2.jpg" alt="Smartwatch Amazfit bit S Lite Xiaomi" width="100%" height="300px">
                     <div class="px-3 py-2">
-                        <span class="border rounded-pill px-2 bg-info text-white">Más detalles</span>
-                        <span class="rounded-pill px-2 bg-warning text-white">Ver precio</span>
+                        <span class="badge bg-success">Más detalles</span>
+                        <span class="badge bg-primary">Ver precio</span>
                         <h4 class="pt-2">Amazfit Bip S Lite Xiaomi</h4>
-                        <p>Contenido de card</p>
-                        <p  class="small text-secondary mb-2">Última actualización 1</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quaerat natus error cum magni, hic repellendus doloremque perspiciatis quae.<p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 mx-auto my-2  px-0 border" style="width: 300px;">
-                    <img src="./assets/smartwatch3.jpg" alt="" width="100%" height="300px">
+
+                <!-- CARD 3 -->
+                <div class="col-sm-12 col-md-6 col-lg-3 mx-auto my-2  px-0 border card">
+                    <img src="./assets/smartwatch3.jpg" alt="Smartwatch Oneplus watch" width="100%" height="300px">
                     <div class="px-3 py-2 ">
-                        <span class="border rounded-pill px-2 bg-info text-white">Más detalles</span>
-                        <span class="border rounded-pill px-2">Disponible</span>
+                        <span class="badge bg-secondary">Último lanzamiento</span>
+                        <span class="badge bg-danger">Stock limitado</span>
                         <h4 class="pt-2">OnePlus Watch</h4>
-                        <p>Contenido de card</p>
-                        <p  class="small text-secondary mb-2">Última actualización 1</p>      
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque mollitia tenetur, ea qui quidem minus quas aliquid iste numquam ipsum cupiditate culpa sed aperiam et vel, recusandae illo, sit quos!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Publicidad -->
-        <section>
-            <div class="container d-flex my-5">
-                <div><img src="https://images.pexels.com/photos/310435/pexels-photo-310435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="100%" height="auto"></div>
-                <div class="px-3 texto d-flex flex-column justify-content-center w-100 py-5">
-                    <h2>Publicidad</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laboriosam nam reprehenderit iste quia incidunt, quibusdam alias nemo provident numquam voluptatem atque hic. Illo, hic. Illo asperiores illum maxime aliquid!</p>
-                    <button class="btn rounded-pill btn-outline-light click">Click</button>
+
+<!-- Publicidad -->
+        <section id="nosotros">
+            <div class="container d-flex flex-wrap my-5 py-5 post">
+
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <img src="https://cdn.pixabay.com/photo/2017/02/12/12/54/polar-a360-2059937_960_720.jpg" alt="publicidad" width="100%" height="350px" >
                 </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-6 post__texto">
+                    <h6 class="small-title mb-0">About our product</h6>
+                    <h2 class="display-5">Smart Watch for easy life</h2>
+                    <p class="lead m-0 pb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <ul>
+                        <li>Attractive Interface with Many Options</li>
+                        <li>Live Chat and Instant Notification</li>
+                        <li>Install App with Unlimited Features</li>
+                    </ul>
+                    <button class="btn rounded-pill btn-outline-light post__click">More about us</button>
+                </div>
+
             </div>
         </section>
 
-        <!-- Formulario -->
-        <section>
+
+<!-- Formulario -->
+        <section id="contacto">
             <form action="" method="post">
-                <div class="container">
-                    <div class="">
-                        <label for="">Nombre</label>
-                        <input type="text">
-                        <label for="">Email</label>
-                        <input type="email" name="" id="">
+                <div class="form d-flex flex-column align-items-center mb-5">
+
+                    <h6 class="m-1">Get in touch</h6>
+                    <h2>Contacto</h2>
+
+                    <div class="d-flex my-2 " style="width: 60vw;">
+                        <input type="text" class="form-control me-2" placeholder="Nombre">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email">
                     </div>
-                    <div class="">
-                        <label for="">Consulta</label>
-                        <input type="text">
+
+                    <div style="width: 60vw;">
+                        <textarea name="text" id="text" cols="50" rows="5" placeholder="Consulta" class="form-control"></textarea>
                     </div>
+
+                    <div class="form-check my-2">
+                        <input class="form-check-input" type="checkbox" value="" id="formCheckChecked" checked="">
+                        <label class="form-check-label" for="formCheckChecked">Recibir novedades por correo electrónico</label>
+                        <p  class="small text-secondary mb-2">No te pierdas la posibilidad de ganar en nuestros sorteos mensuales</p>    
+                    </div>
+
                     <div>
-                        <button type="button" class="p-2 bg-primary bg-gradient text-white ">Enviar</button>
+                        <button type="button" class="btn p-2 btn-primary text-white">Enviar</button>
                     </div>
+
                 </div>
             </form>
         </section>
+
     </main>
-    <footer></footer>
+    <!-- FIN MAIN -->
+
+
+    <!-- COMIENZO FOOTER -->
+    <footer>
+
+        <div>
+            <ul class="list-unstyled d-flex justify-content-around flex-wrap mx-3 my-0 py-2">
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Redes sociales</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+        </div>
+
+        <div class="small">
+            <p class="m-0">&#169 Copyright 2022</p>
+            <p class="m-0 pb-2">Designed by Carla Fernandez</p>
+        </div>
+
+    </footer>
 
 
 
